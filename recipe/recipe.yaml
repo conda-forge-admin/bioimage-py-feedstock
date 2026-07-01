@@ -27,6 +27,7 @@ requirements:
     - scikit-image >=0.20
     - cloudpickle
     - tqdm
+    - tomli-w
     - threadpoolctl
     - bioimage-cpp
     - zarr >=3
