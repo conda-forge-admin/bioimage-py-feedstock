@@ -1,5 +1,5 @@
 context:
-  version: "0.1.0"
+  version: "0.2.0"
   python_min: "3.11"
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/computational-cell-analytics/bioimage-py/archive/refs/tags/${{ version }}.tar.gz
-  sha256: 0ed488cb3493f753cafe4f0b09fd9ca92723fe782d30e9fb62ef1032463055ae
+  sha256: cd24d408288d4faf7ef8ba9b1a0b0f390f31fcf6bdd8c3c78a9e3d03510aaf42
 
 build:
   noarch: python
@@ -27,6 +27,7 @@ requirements:
     - scikit-image >=0.20
     - cloudpickle
     - tqdm
+    - tomli-w
     - threadpoolctl
     - bioimage-cpp
     - zarr >=3
